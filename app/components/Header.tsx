@@ -1,6 +1,5 @@
 import { Link } from "@remix-run/react";
 import { useState } from "react";
-import NewsletterSignup from "./NewsletterSignup";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,9 +27,6 @@ export default function Header() {
             >
               Questions? Email johnny@wavingforest.com
             </a>
-            <div className="pl-4 border-l border-gray-200">
-              <NewsletterSignup />
-            </div>
           </div>
 
           {/* Mobile menu button */}
@@ -93,9 +89,6 @@ export default function Header() {
             >
               Questions? Email johnny@wavingforest.com
             </a>
-            <div className="px-3 py-2">
-              <NewsletterSignup />
-            </div>
           </div>
         </div>
       </nav>
